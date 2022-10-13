@@ -15,8 +15,8 @@ def thread_function(i, n): # Лучше называть переменные в
             current_value = 1 + current_value % 3
             cv.notify_all()
 
-n = int(input()) # iteration_count = int(input()). Лучше использовать функции (то есть засунуть это в функцию main и
-#добавить ниже if __name__ == "__main__": main()
+n = int(input()) # iteration_count = int(input()). Лучше использовать функции (то есть засунуть это и следующий (ниже) код в функцию main и
+#добавить ниже if __name__ == "__main__": main() ) 
 
 threads = [
     threading.Thread(target=thread_function, args=(1, n)), #Аналогично заменить n на, например, iteration_count
